@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(90deg, #030303, #ab0101, black);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-image: linear-gradient( to bottom ,#ab0101 ,  black);
+    background-color:  #ab0101;
+    color: white;
+    padding: 5px;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9a9e;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+/* Movie Card */
+.movie {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    width: 220px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* Movie Images */
+.movie img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Hidden Flag in CSS */
+body::after {
+    content: "FLAG{HIDDEN_CSS_FLAG}";
+    display: none;
+}
+.movie-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.movie-actions button {
+    background: none;
+    border: 2px solid #333;
+    border-radius:50% ;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.movie-actions button:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.2);
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin-panel
+Disallow: /hidden-secret
+Disallow: /Here your's second part of FLAG : "_Ach4rya_Putr4?"
